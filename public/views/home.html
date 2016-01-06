@@ -1,0 +1,38 @@
+<div class="col-md-6 content">
+  <div class="panel panel-default">
+    <div class="panel-heading" style="background-image:none">
+      Usuário 1
+    </div>
+    <div class="panel-body" style="max-height:200px;overflow:auto;">
+      <h5 ng-repeat="item in chatList">{{item.user}}:{{item.message}}</h5>
+    </div>
+    <hr>
+    <div class="panel-body">
+      <label>Digite uma Mensagem</label>
+      <input type="text" class="form-control" ng-model="chatMessage1"/>
+      <div class="pull-right">
+        <input type="button" class="btn btn-success" value="Ok" ng-click="create()"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6 content">
+  <div class="panel panel-default">
+    <div class="panel-heading" style="background-image:none">
+      Usuário 2
+    </div>
+    <div class="panel-body" style="max-height:200px;overflow:auto;">
+      <h5 ng-repeat="item in chatList">{{item.user}}:{{item.message}}</h5>
+    </div>
+    <hr>
+    <div class="panel-body">
+      <label>Digite uma Mensagem</label>
+      <input type="text" class="form-control" ng-model="chatMessage2"/>
+      <div class="pull-right">
+        <input type="button" class="btn btn-success" value="Ok" ng-click="create()"/>
+      </div>
+    </div>
+  </div>
+</div>
